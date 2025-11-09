@@ -20,7 +20,7 @@ public class Lec01FluxCreate {
                             fluxSink.next(country);
                             if(country.equalsIgnoreCase("india")) {
                                 fluxSink.complete();
-                                //co=false;
+                                co=false;
                             }
                         }
                     })
