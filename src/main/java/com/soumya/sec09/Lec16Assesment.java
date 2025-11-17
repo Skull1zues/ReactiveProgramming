@@ -21,6 +21,10 @@ public class Lec16Assesment {
                         .flatMap(Lec16Assesment::getUserInfo)
                                 .subscribe(Util.subscriber());
 
+        var flux = Flux.just("a","b","c");
+        flux.startWith(flux)
+                        .subscribe(Util.subscriber());
+
         Util.sleepSecond(10);
 
 
