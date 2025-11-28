@@ -11,7 +11,7 @@ public class Lec01SinkOne {
 
     public static void main(String[] args) {
 
-        demo3();
+        demo2();
     }
     private static void demo1(){
         var sink = Sinks.one();
@@ -29,9 +29,10 @@ public class Lec01SinkOne {
 
         var mono = sink.asMono();
         sink.tryEmitValue("hi");
+        sink.tryEmitValue("Hello");
         mono.subscribe(Util.subscriber("Sub1"));
         mono.subscribe(Util.subscriber("Sub2"));
-        //sink.tryEmitValue("hi");
+
         //sink.tryEmitEmpty();
         //sink.tryEmitError(new RuntimeException("Oops"));
     }
