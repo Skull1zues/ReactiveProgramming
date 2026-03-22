@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/SPRING/1st_WebFlux_/pom.xml" />
+        <option value="$PROJECT_DIR$/SPRING/1st_WebFlux_PlayGround/pom.xml" />
       </list>
     </option>
   </component>
