@@ -1,0 +1,18 @@
+package com.soumya._stWebFluxApplication.sec09.mapper;
+
+import com.soumya._stWebFluxApplication.sec09.dto.ProductDto;
+import com.soumya._stWebFluxApplication.sec09.entity.Product;
+
+public class ProductMapper {
+    public static Product mapProductDtoToProduct(ProductDto productDto) {
+        Product product = new Product();
+        product.setId(productDto.id());
+        product.setDescription(productDto.description());
+        product.setPrice(productDto.price());
+        return product;
+    }
+
+    public static ProductDto mapProductToProductDto(Product product) {
+        return new ProductDto(product.getId(), product.getDescription(), product.getPrice());
+    }
+}
